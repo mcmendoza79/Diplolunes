@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	
+	color: #000;
+	background: #728992;
+	margin: 0;
+	height: 80vh;
+	
+  }
+
+.contenedor {
+	width: 799px;
+	background: #a5babe;
+	color: black;
+	font-size: 1em;
+	display:flex;
+	flex-direction: column;
+	width: auto;
+    height: auto;
+	
+	
+}
+	
+.nav {
+	background: #ddaf32;
+	width: 800px;
+	
+	
+}
+ul {
+	list-style-type:none;
+	}
+
+li {
+	margin-bottom: 15px; 
+   }
+a {
+	color:#F1F2C0;
+	text-decoration: none;
+   }
+
+.section {
+	background: #F1F2C0;
+	border: 1px solid black;
+	width: 800px;
+	margin: 0 0 0 0px;
+	width: auto;
+    height: auto;
+	
+	     }
+
+.aside {
+	background: #CCC59E;
+	border: 1px solid black;
+	width: 800px;
+	width: auto;
+    height: auto;
+	
+	
+       }
