@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+	<script>
+           let numeros = [];
+           while (true) {
+            let input = prompt("Ingrese un número o escriba 'f' para salir:");
+            if (input.toLowerCase() === 'f') {
+            break;  
+                                             }
+            let numeroIngresado = parseFloat(input);
+            if (!isNaN(numeroIngresado)) {
+              numeros.push(numeroIngresado);
+                                        } 
+            else {
+               alert("Por favor, ingrese un número válido.");
+                }
+                        }
+           
+	         let mayor = numeros[0]; 
+             for (let i = 1; i < numeros.length; i++) {
+                 if (numeros[i] > mayor) {
+                    mayor = numeros[i];
+                                         }
+                                                      }
+            document.write(`El mayor número ingresado es: `+ mayor);
+    
+    </script>
+</body>
+</html>
+

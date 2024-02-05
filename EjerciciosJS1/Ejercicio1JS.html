@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+</head>
+
+<body>
+	<script>
+             let x = prompt("Ingrese los metros a recorrer:");
+             while (isNaN(x) || x === null) {
+                    
+                    x = prompt("Error: Por favor, ingrese un número válido:");
+                       }
+                    x = parseInt(x);
+
+                  if (x <= 1000) {
+                     document.write(`Le conviene caminar, ¡haga ejercicio!<br/>`);
+                           } 
+                  else if (x > 1000 && x <= 10000) {
+                     document.write(`Le conviene recorrerlos en bicicleta, ¡haga ejercicio!<br/>`);
+                                             } 
+                  else if (x > 10000 && x <= 30000) {
+                     document.write(`Use la SUBE, ¡vaya en colectivo!<br/>`);
+                                             } 
+                  else if (x > 30000 && x <= 100000) {
+                     document.write(`Use el auto!<br/>`);
+                                               } 
+                  else if (x > 100000) {
+                     document.write(`Use sus millas, ¡vaya en avión!<br/>`);
+                                              }
+            
+    </script>
+</body>
+
+</html>
