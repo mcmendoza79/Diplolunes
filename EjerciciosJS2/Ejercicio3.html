@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+      <div id="resultado"></div>
+     <script>
+            var alumnos = [{nombre: 'Juan Gomez',nota: 7}, {nombre: 'Pedro Rodriguez',nota: 4}, {nombre: 'Roxana García',
+                   nota: 8}, {nombre: 'Luciano Lopez', nota: 5}, {nombre: 'Fernanda Gimenez',nota: 6}, {nombre: 'Florencia Martinez',
+                   nota: 10}, {nombre: 'Raul Sanchez', nota: 7}, {nombre: 'Sandra Figueroa',nota: 8}
+                   ];
+		
+	      var aprobados=[];
+    				
+            for (let i = 0; i < alumnos.length; i++) {
+            var alumno = alumnos[i];
+            if (alumno.nota >= 7) {
+                aprobados.push([alumno.nombre, alumno.nota]);
+                                  }
+                                                     }
+            var resultadoDiv = document.getElementById('resultado');
+            var resultadoHTML = '<h2>Alumnos Aprobados</h2><ul>';
+            for (let j = 0; j < aprobados.length; j++) {
+                resultadoHTML += '<li>' + aprobados[j][0] + ' - Nota: ' + aprobados[j][1] + '</li>';
+                                                   }
+                resultadoHTML += '</ul>';
+                resultadoDiv.innerHTML = resultadoHTML;
+      </script>
+</body>
+</html>
